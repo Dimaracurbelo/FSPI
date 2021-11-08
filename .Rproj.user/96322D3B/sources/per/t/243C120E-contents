@@ -1,0 +1,16 @@
+library(hms)
+
+library(tidyverse)
+
+library(lubridate)
+
+library(dplyr)
+
+
+# instalar git
+
+install.packages("devtools")
+
+library(devtools)
+
+install_github("Nicolas-Schmidt/IntRo")

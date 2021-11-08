@@ -1,0 +1,24 @@
+{
+    "id": "9E11F3FB",
+    "path": "C:/GitHubFspi/FSPI/script_data_frame.R",
+    "project_path": "script_data_frame.R",
+    "type": "r_source",
+    "hash": "970884719",
+    "contents": "",
+    "dirty": false,
+    "created": 1636379355764.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "cursorPosition": "2,0",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1636379460,
+    "encoding": "ISO8859-1",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1636379460678,
+    "read_only": false,
+    "read_only_alternatives": []
+}

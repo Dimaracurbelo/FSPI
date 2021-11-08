@@ -1,0 +1,140 @@
+library(tidyverse)
+library(hms)
+library(tidyverse)
+library(lubridate)
+source("script_librerias.R")
+install.packages("installr")
+install.packages("Rtools")
+load("C:/Users/Usuario/Desktop/Maestria/.RData")
+Sys.which("make")
+library(readr)
+library(readxl)
+library(readxl)
+Diario_de_Sueï¿½_o_de_el_la_niï¿½_o_a_trandformado_para_probar_con_r <- read_excel("C:/Users/Usuario/Desktop/Diario de SueÃ±o de el_la niÃ±o_a (trandformado) para probar con r.xlsx")
+View(Diario_de_Sueï¿½_o_de_el_la_niï¿½_o_a_trandformado_para_probar_con_r)
+library(readxl)
+Tabla_de_variables_Cuestionario_MCTQ_niï¿½_ez <- read_excel("C:/Users/Usuario/Desktop/Tabla de variables Cuestionario MCTQ  niÃ±ez.xlsx")
+View(Tabla_de_variables_Cuestionario_MCTQ_niï¿½_ez)
+library(readxl)
+Tabla_de_variables_Cuestionario_MCTQ_niï¿½_ez <- read_excel("C:/Users/Usuario/Desktop/Tabla de variables Cuestionario MCTQ  niÃ±ez.xlsx")
+View(Tabla_de_variables_Cuestionario_MCTQ_niï¿½_ez)
+load("C:/Users/Usuario/Desktop/Maestria/.RData")
+DFH<-read.csv("Cuestionario FSPI.CSV")
+DFH<-read.csv("Cuestionario FSPI.CSV")
+DFH<-read.csv("Cuestionario FSPI.CSV")
+getwd()
+setwd("C:/Users/Usuario/Desktop/Maestria")
+DFH<-read.csv("Cuestionario FSPI.CSV")
+DFH<-read.csv("CuestionarioMCTQ")
+library(readxl)
+Cuestionario_FSPI <- read_excel("C:/Users/Usuario/Desktop/Cuestionario FSPI.xlsx")
+View(Cuestionario_FSPI)
+View(Cuestionario_FSPI)
+DFH<-read.csv("pruebacuestionario")
+#linea para correr todo lo del otro archivo ej librerias
+source("script_librerias.R")
+DFH<-read.csv("Cuestionario_MCTQ")
+DFH<-read.csv2("Cuestionario_MCTQ.csv")
+DFH<-read.csv2("Cuestionario_MCTQ.csv")
+DFH<-read.csv2("MCTQ.csv")
+DFH<-read.csv("C:/Users/Usuario/Desktop/Maestria/MCTQ.csv")[1,]
+DFH<-read.csv("C:/Users/Usuario/Desktop/Maestria/MCTQ.csv")[1,]
+DFH<-read.csv2("C:/Users/Usuario/Desktop/Maestria/MCTQ.csv")[1,]
+DFH<-read.csv2("C:/Users/Usuario/Desktop/Maestria/MCTQ.csv")
+DFH1<-read.csv("C:/Users/Usuario/Desktop/Maestria/MCTQ.csv")[1,]
+#linea para correr todo lo del otro archivo ej librerias
+source("script_librerias.R")
+getwd()
+setwd("C:/Users/Usuario/Desktop/Maestria")
+DFH<-read.csv("C:/Users/Usuario/Desktop/Maestria/MCTQ.csv")[1,]
+DFH<-read.csv("C:/Users/Usuario/Desktop/Maestria/MCTQ.csv")[1,]
+DFH<-read.csv("C:/Users/Usuario/Desktop/Maestria/MCTQ.csv")
+DFH<-read.csv("C:/Users/Usuario/Desktop/Maestria/MCTQ.csv")
+View(DFH)
+View(DFH)
+View(DFH)
+DFH<-read.csv2("C:/Users/Usuario/Desktop/Maestria/MCTQ.csv")
+View(DFH)
+DFH
+DF_MCTQ<-read.csv2("C:/Users/Usuario/Desktop/Maestria/MCTQ.csv")
+DF_MCTQ<-read.csv2("C:/Users/Usuario/Desktop/Maestria/MCTQ.csv")
+library(dplyr)
+install.packages("mctq")
+$name
+$names(DF_MCTQ)
+View(DF_MCTQ)
+DF_MCTQ$SLW = rowSums(DF_MCTQ[ ,10,-9])
+DF_MCTQ$SLW = rowSums(DF_MCTQ[ ,10,9])
+DF_MCTQ$SLW = rowSums(DF_MCTQ[ ,10,9])
+DF_MCTQ$SLW = rowSums(DF_MCTQ[ ,10:9])
+DF_MCTQ$SLW = rowSums(DF_MCTQ[ ,9:10])
+DF_MCTQ$SLW = rowSums(DF_MCTQ[ ,9:-10])
+DF_MCTQ$SLW = rowSums(DF_MCTQ[ ,9:10])
+DF_MCTQ$SLW = colSums(DF_MCTQ[ ,9:10])
+MCTQ<-read.csv2("C:/Users/Usuario/Desktop/Maestria/MCTQ.csv")
+MCTQ<-read.csv2("C:/Users/Usuario/Desktop/Maestria/MCTQ.csv")
+MCTQ$SLW = MCTQ$SO_W-MCTQ$BT_W
+MCTQ$MSFsc = MCTQ$MSF-((MCTQ$SDF-MCTQ$ASD)/2) #MSFsc<- MSF-((SDF-ASD)/2)   #if SDF>SDW, COMO ESCRIBO EL CONDICIONAL?
+## Acomodar la base de datos----
+class(BT_W)
+## Acomodar la base de datos----
+class(MCTQ$BT_W)
+## Acomodar la base de datos----
+class(MCTQ)
+## Acomodar la base de datos----
+class(MCTQ$SE_W)
+#como la paso a hora?
+str(MCTQ)
+MCTQ_horas <-ymd_hms(MCTQ)
+MCTQ_horas<- hms(MCTQ)
+which git
+which git
+git --version
+library(curl)
+library(zlib)
+install.packages("zlib")
+install.packages("zlib")
+library(zlib)
+library(openssl)
+library(expat)
+install.packages("expat")
+library(libcoin)
+install.packages("libcoin")
+library(libcoin)
+library(expat)  #no disponible para la version 4.0.0
+library(zlib) #no disponible para la version 4.0.0
+library(usethis)
+install.packages("usethis")
+library(zlib) #no disponible para la version 4.0.0
+library(openssl)
+library(expat)  #no disponible para la version 4.0.0
+library(libcoin)
+library(usethis)
+openssl-devel zlib-devel
+$yum install curl-devel expat-devel gettext-devel \
+libz-dev libssl-dev
+install.packages("devtools")
+install.packages("devtools")
+install.packages("devtools")
+library(devtools)
+install_github("Nicolas-Schmidt/IntRo")
+library(devtools)
+# actualice R
+# install:
+rtools > writeLines('PATH="${RTOOLS40_HOME}\\usr\\bin;${PATH}"', con = "~/.Renviron")
+writeLines('PATH="${RTOOLS40_HOME}\\usr\\bin;${PATH}"', con = "~/.Renviron")
+install.packages("devtools")
+library(devtools)
+install.packages("devtools")
+library(devtools)
+install_github("Nicolas-Schmidt/IntRo")
+version
+packageStatus()
+version
+install.packages("devtools")
+library(devtools)
+install.packages("usethis")
+library(devtools)
+install_github("Nicolas-Schmidt/IntRo")
+install.packages("learnr")
+library(devtools)
