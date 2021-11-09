@@ -1,6 +1,5 @@
 #linea para correr todo lo del otro archivo ej librerias
 source("script_librerias.R")
-
 # actualice R
 # install:
 rtools 
@@ -10,13 +9,41 @@ writeLines('PATH="${RTOOLS40_HOME}\\usr\\bin;${PATH}"', con = "~/.Renviron")
 ## Levantar base de Datos----
 
 getwd()
-setwd("C:/Users/Usuario/Desktop/Maestria")
-MCTQ<-read.csv2("C:/Users/Usuario/Desktop/Maestria/MCTQ.csv")
+MCTQ<-read.csv2("MCTQ.csv")
 View(DF_MCTQ)
+str(MCTQ)
+#here para leer nombre de la carpeta y sub carpeta, nombre del archivo
+
+## Buenas practica, Tareas pendientes----
+# Crear carpeta cuestionario 
+#MCTQ<-read.csv2(here("nombre de la carpeta","MCTQ.csv"))
 
 ## Acomodar la base de datos----
 
-str(MCTQ)
+
+# MCTQ <- MCTQ %>% 
+#   pivot_longer(cols(c("SE_W", "SE_F")), names_to = c("SE", "tipo_dia"), values_to = "hora", names_pattern = "(.*)_(.*)")
+
+MCTQ <- MCTQ %>% 
+  drop_na(Participantes.Participante) %>% 
+  # convierto en hms
+  mutate(
+    SE_W = hm(SE_W),
+    SE_F = hm(SE_F),
+    SO_W = hm(SO_W),
+    SO_F = hm(SO_F),
+    ) %>% 
+  #calculo la duracion
+  mutate(
+    SD_W = if_else(SO_W < SE_W, SE_W-SO_W, SE_W-(SO_W-hours(24))),
+    SD_F = if_else(SO_F < hms("12:00:00"), SE_F-SO_F, SE_F-(SO_F-hours(24)))
+  ) %>% 
+  #calculo MS
+  mutate(
+    MS_W = if_else(SO_W+(SD_W/2) > hours(24), SO_W+(SD_W/2)-hours(24), SO_W+(SD_W/2))
+  ) %>% 
+  #calculo MSFSc y SJL
+  
 class(MCTQ$SE_W)  #character
                   #como la paso a hora?
 
@@ -28,20 +55,20 @@ print()
 ## Calcular variables----
 
 
-MCTQ$SLW = MCTQ$SO_W-MCTQ$BT_W  # SLW<- SO_W - BT_W
+MCTQ$SL_W = MCTQ$SO_W-MCTQ$BT_W  # SLW<- SO_W - BT_W
 
-MCTQ$SDW =MCTQ$SE_W - MCTQ$SO_W # SDW<- SE_W-SO_w
+MCTQ$SD_W =MCTQ$SE_W - MCTQ$SO_W # SDW<- SE_W-SO_w
 
-MCTQ$MSW = MCTQ$SO_W+(MCTQ$SDW/2) #MSW<- SO_W+(SDW/2)
+MCTQ$MS_W = MCTQ$SO_W+(MCTQ$SDW/2) #MSW<- SO_W+(SDW/2)
 
 MCTQ$SI_IN_W = MCTQ$G_UP_W-MCTQ$SE_W #SI_In_W<- G_UP_W - SE_W
 
 
-MCTQ$SLF = MCTQ$SO_F-MCTQ$BT_F #SLF<- SO_F - BT_F
+MCTQ$SL_F = MCTQ$SO_F-MCTQ$BT_F #SLF<- SO_F - BT_F
 
-MCTQ$SDF =MCTQ$SE_F - MCTQ$SO_F #SDF<- SE_F-SO_F
+MCTQ$SD_F =MCTQ$SE_F - MCTQ$SO_F #SDF<- SE_F-SO_F
 
-MCTQ$MSF = MCTQ$SO_F+(MCTQ$SDF/2) #MSF<- SO_F+(SDF/2)
+MCTQ$MS_F = MCTQ$SO_F+(MCTQ$SDF/2) #MSF<- SO_F+(SDF/2)
 
 MCTQ$SI_IN_F = MCTQ$G_UP_F-MCTQ$SE_F #SI_In_F<- G_UP_F - SE_F
 

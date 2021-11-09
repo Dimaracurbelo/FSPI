@@ -3,19 +3,22 @@
     "path": "C:/GitHubFspi/FSPI/.Rhistory",
     "project_path": ".Rhistory",
     "type": "r_history",
-    "hash": "2724234760",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1636379287145.0,
     "source_on_save": false,
     "relative_order": 1,
-    "properties": {},
+    "properties": {
+        "cursorPosition": "0,0",
+        "scrollLine": "0"
+    },
     "folds": "",
-    "lastKnownWriteTime": 1636238539,
+    "lastKnownWriteTime": 1636379462,
     "encoding": "ISO8859-1",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1636238539,
+    "last_content_update": 1636379462,
     "read_only": false,
     "read_only_alternatives": []
 }
