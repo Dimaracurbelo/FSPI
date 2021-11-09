@@ -1,6 +1,5 @@
 #linea para correr todo lo del otro archivo ej librerias
 source("script_librerias.R")
-
 # actualice R
 # install:
 rtools 
